@@ -1,0 +1,709 @@
+<html class="light" lang="en"><head></head><body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Paw Bliss | Modern Pet Luxury</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Manrope:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+                "on-surface": "#011d35",
+                "outline-variant": "#c1c7d2",
+                "on-secondary-fixed-variant": "#005307",
+                "inverse-on-surface": "#e9f1ff",
+                "tertiary-fixed": "#ffdea4",
+                "surface-container-high": "#dbe9ff",
+                "surface": "#f8f9ff",
+                "error-container": "#ffdad6",
+                "tertiary-container": "#6e4f00",
+                "surface-variant": "#d1e4ff",
+                "on-tertiary-fixed": "#261900",
+                "secondary": "#006e0c",
+                "inverse-surface": "#19324b",
+                "primary-fixed-dim": "#a1c9ff",
+                "surface-dim": "#c4dcfd",
+                "primary": "#003e6f",
+                "on-tertiary-fixed-variant": "#5d4200",
+                "secondary-fixed-dim": "#77dd6a",
+                "on-secondary": "#ffffff",
+                "on-primary-fixed-variant": "#004880",
+                "secondary-fixed": "#92fa83",
+                "surface-container": "#e4efff",
+                "on-primary-fixed": "#001c37",
+                "primary-container": "#005696",
+                "on-primary": "#ffffff",
+                "tertiary": "#513900",
+                "outline": "#727781",
+                "tertiary-fixed-dim": "#fabd32",
+                "on-error-container": "#93000a",
+                "surface-container-lowest": "#ffffff",
+                "on-secondary-fixed": "#002201",
+                "primary-fixed": "#d2e4ff",
+                "on-background": "#011d35",
+                "surface-tint": "#1961a1",
+                "on-secondary-container": "#00730d",
+                "secondary-container": "#8ff780",
+                "on-tertiary": "#ffffff",
+                "surface-bright": "#f8f9ff",
+                "inverse-primary": "#a1c9ff",
+                "error": "#ba1a1a",
+                "on-surface-variant": "#414750",
+                "surface-container-highest": "#d1e4ff",
+                "on-tertiary-container": "#fcbf35",
+                "on-primary-container": "#a5cbff",
+                "background": "#f8f9ff",
+                "surface-container-low": "#eef4ff",
+                "on-error": "#ffffff"
+        },
+        "borderRadius": {
+                "DEFAULT": "0.25rem",
+                "lg": "0.5rem",
+                "xl": "0.75rem",
+                "full": "9999px"
+        },
+        "spacing": {
+                "gutter-mobile": "16px",
+                "margin-mobile": "20px",
+                "container-max": "1200px",
+                "base": "8px",
+                "margin-desktop": "40px",
+                "gutter-desktop": "24px"
+        },
+        "fontFamily": {
+                "label-md": [
+                        "Manrope"
+                ],
+                "headline-lg-mobile": [
+                        "Playfair Display"
+                ],
+                "body-lg": [
+                        "Manrope"
+                ],
+                "headline-md": [
+                        "Playfair Display"
+                ],
+                "display-lg": [
+                        "Playfair Display"
+                ],
+                "body-md": [
+                        "Manrope"
+                ],
+                "label-lg": [
+                        "Manrope"
+                ],
+                "headline-lg": [
+                        "Playfair Display"
+                ]
+        },
+        "fontSize": {
+                "label-md": [
+                        "12px",
+                        {
+                                "lineHeight": "16px",
+                                "fontWeight": "500"
+                        }
+                ],
+                "headline-lg-mobile": [
+                        "28px",
+                        {
+                                "lineHeight": "36px",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-lg": [
+                        "18px",
+                        {
+                                "lineHeight": "28px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "headline-md": [
+                        "24px",
+                        {
+                                "lineHeight": "32px",
+                                "fontWeight": "600"
+                        }
+                ],
+                "display-lg": [
+                        "48px",
+                        {
+                                "lineHeight": "56px",
+                                "letterSpacing": "-0.02em",
+                                "fontWeight": "700"
+                        }
+                ],
+                "body-md": [
+                        "16px",
+                        {
+                                "lineHeight": "24px",
+                                "fontWeight": "400"
+                        }
+                ],
+                "label-lg": [
+                        "14px",
+                        {
+                                "lineHeight": "20px",
+                                "letterSpacing": "0.05em",
+                                "fontWeight": "600"
+                        }
+                ],
+                "headline-lg": [
+                        "32px",
+                        {
+                                "lineHeight": "40px",
+                                "fontWeight": "700"
+                        }
+                ]
+        }
+},
+    },
+  }
+</script>
+<style>.material-symbols-outlined {
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24
+    }
+.editorial-shadow {
+    box-shadow: 0 20px 40px -15px rgba(0, 62, 111, 0.08)
+    }
+.no-scrollbar::-webkit-scrollbar {
+    display: none
+    }
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none
+    }
+.hero-gradient {
+    background: linear-gradient(135deg, #005696 0%, #003e6f 100%);
+    background-image: linear-gradient(135deg, rgba(0, 86, 150, 0.9) 0%, rgba(0, 62, 111, 0.95) 100%), url(https://lh3.googleusercontent.com/aida-public/AB6AXuDdOFI8sBh2-0lGpGY-IPv7cqTNPFXx2sOMbxHRaLcoqmp8sUSsfltfsrWZtf7yoS8c6q0sgdtGuPznFOFxifHi7CEPf00oPzVQnK4hM8wLp3y4k5m6ioN_228kG07IaykxnBCFYIbUN1BJkEy2SrUelFfGbABZcs9BqsAlLdqUZuvv6jkdoQ0fOCFzhhNz1aqD5JSeGfvOGOA25Gf_ZgK8sqplTSVmXRhstT1qRJHRtusAytagn7yDW-0W4QqgLYPwBcm2xP61Uwg5);
+    background-size: cover;
+    background-position: center
+    }
+.glass-badge {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2)
+    }
+.carousel-slide {
+    display: none !important
+    }
+.carousel-slide.active {
+    display: flex !important;
+    animation: fadeIn 0.5s ease-out
+    }
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        } to {
+        opacity: 1;
+        }
+    }
+.product-card-shadow {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04)
+    }</style>
+<!-- Header -->
+<header class="sticky top-0 z-50 w-full">
+<!-- Utility Bar -->
+<div class="bg-surface-tint text-white py-2 px-margin-desktop text-[12px] font-bold">
+<div class="max-w-container-max mx-auto flex justify-center gap-gutter md:gap-12 flex-wrap text-center">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">grid_view</span> The Biggest Online Pet Store with 12,000+ Products</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">schedule</span> 3% cashback on all orders</span>
+<span>Free Delivery Above AED 100</span>
+<span>60 Minute Delivery Available</span>
+</div>
+</div>
+<!-- Main Header -->
+<div class="text-white py-4 px-margin-desktop bg-primary-container">
+<div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-gutter">
+<!-- Logo -->
+<div class="text-headline-md font-headline-md font-bold shrink-0">Paw Bliss</div>
+<!-- Search Bar -->
+<div class="flex-1 w-full relative">
+<input class="w-full h-12 rounded-full pl-6 pr-12 text-on-surface border-none focus:ring-0 text-sm font-medium" placeholder="What do you think your pet needs?" type="text"/>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 text-surface-tint">search</span>
+</div>
+<!-- Location & User Actions -->
+<div class="flex items-center gap-6 shrink-0">
+<button class="flex items-center gap-2 bg-white/20 hover:bg-white/30 transition-colors px-4 py-2 rounded-full text-xs font-bold">
+<span class="material-symbols-outlined text-[18px]">location_on</span>
+<div class="text-left leading-tight">
+<span class="block opacity-80 font-normal">60-minute Delivery:</span>
+<span>Select your Location</span>
+</div>
+<span class="material-symbols-outlined text-[14px]">chevron_right</span>
+</button>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 group">
+<span class="material-symbols-outlined">person</span>
+<div class="hidden lg:block text-left text-xs leading-tight">
+<span class="block opacity-80">Sign in</span>
+<span class="font-bold">My Account</span>
+</div>
+</button>
+<button class="material-symbols-outlined hover:scale-110 transition-transform">favorite</button>
+<button class="relative material-symbols-outlined hover:scale-110 transition-transform">
+                        shopping_cart
+                        <span class="absolute -top-2 -right-2 bg-black text-white text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">0</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Sub Navigation -->
+<nav class="bg-white border-b border-outline-variant py-3 px-margin-desktop shadow-sm">
+<div class="max-w-container-max mx-auto flex flex-wrap justify-center md:justify-start gap-gutter md:gap-8 overflow-x-auto no-scrollbar">
+<a class="font-bold text-[13px] text-on-surface hover:text-error transition-colors whitespace-nowrap" href="#">DOG</a>
+<a class="font-bold text-[13px] text-on-surface hover:text-error transition-colors whitespace-nowrap" href="#">CAT</a>
+<a class="font-bold text-[13px] text-on-surface hover:text-error transition-colors whitespace-nowrap" href="#">FISH</a>
+<a class="font-bold text-[13px] text-on-surface hover:text-error transition-colors whitespace-nowrap" href="#">BIRD</a>
+<a class="font-bold text-[13px] text-on-surface hover:text-error transition-colors whitespace-nowrap" href="#">SMALL PET</a>
+<a class="font-bold text-[13px] text-on-surface hover:text-error transition-colors whitespace-nowrap" href="#">OUR BRANDS</a>
+<a class="font-bold text-[13px] text-on-surface hover:text-error transition-colors whitespace-nowrap" href="#">OFFER ZONE</a>
+<a class="font-bold text-[13px] text-on-surface hover:text-error transition-colors whitespace-nowrap" href="#">NEW ARRIVALS</a>
+<a class="font-bold text-[13px] text-on-surface hover:text-error transition-colors whitespace-nowrap" href="#">SERVICES</a>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Carousel Section -->
+<section class="hero-gradient relative min-h-[500px] flex items-center overflow-hidden">
+<div class="max-w-container-max mx-auto px-margin-desktop w-full relative">
+<!-- Carousel Controls -->
+<button class="absolute left-4 top-1/2 -translate-y-1/2 z-40 w-12 h-12 rounded-full bg-secondary text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg" onclick="prevSlide()">
+<span class="material-symbols-outlined text-2xl">chevron_left</span>
+</button>
+<button class="absolute right-4 top-1/2 -translate-y-1/2 z-40 w-12 h-12 rounded-full bg-secondary text-white flex items-center justify-center hover:scale-110 transition-transform shadow-lg" onclick="nextSlide()">
+<span class="material-symbols-outlined text-2xl">chevron_right</span>
+</button>
+<!-- Slides Container -->
+<div class="relative" id="carousel-container"><!-- Slide 1: Premium Pet Nutrition -->
+<div class="carousel-slide active grid grid-cols-12 items-center gap-4 py-12 w-full">
+<div class="col-span-12 lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left">
+<div class="bg-white p-6 rounded-sm mb-6 shadow-xl border-b-4 border-secondary">
+<div class="text-primary font-headline-lg text-4xl font-bold tracking-tight">Paw Bliss</div>
+<div class="text-[10px] uppercase tracking-[0.2em] font-bold text-secondary mt-1">Nutrition Excellence</div>
+</div>
+<h1 class="text-white font-headline-lg text-5xl md:text-6xl mb-6 leading-tight">Premium Care <br/> for Every Pet</h1>
+<button class="bg-secondary text-white hover:bg-secondary/90 transition-colors px-10 py-3 rounded-full font-bold text-xl uppercase tracking-wider">
+                        Shop Now
+                    </button>
+</div>
+<div class="col-span-12 lg:col-span-4 flex justify-center items-end relative h-[400px] pt-12 lg:pt-0">
+<div class="relative flex items-end gap-2">
+<img alt="Premium Wet Food" class="w-32 md:w-44 transform -rotate-6 translate-x-4 z-10 drop-shadow-2xl rounded-2xl object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2dpdKleqDNltE7ljIHu6tt-QESNqETZDR5foS5VyNRO5tthywTLIWownxywEuBzYjeNlnVd9S3JfVZX_qbAQ-DEokZ_5Z32mPaKktdVJq7IrrCnHtdcbqROsByc_GhS6cIbXBCgr-nr_TB3D1xzckMzYvyMH49YnqbxHyMzF2OWXrm5TR2UpCsWxIEzt_mbKYdMcLf0QxBCItc-1elF9CODi_jYg0z_4_IdrpmIshbUsfwn1g1iFY_VmsSXUR5juuQdqubBwoa9Xl"/>
+<img alt="High Protein Kibble" class="w-40 md:w-52 z-20 drop-shadow-2xl rounded-2xl object-cover aspect-[3/4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9Mz89qWCHoDsMUPP9N_kElWTE1xh_CRDwoFNBWhu3xSIrYmcW_MfonsZrq6Agq7oyx1OxerNHpAMSTExxxEfwP274a_F4ezyc1So06bfJ1jycnK1mQLY0TOZCqGOBJ9jPmnpxxaptUn7xHOJQW6qkRxFwJcoewGzr9xmwcyAamLpJgu8_4l_Knc8j5rs6ShcD_32VHhYkswbygyA5rM3PbXqTpcFLDzBTa30wIMxg8d__2KNDrEkZ9y_F2QNnfnRjSUVxSKvfOKQh"/>
+<img alt="Organic Treats" class="w-32 md:w-44 transform rotate-6 -translate-x-4 z-10 drop-shadow-2xl rounded-2xl object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOzXT-2YGd1jmylnrZEC0nOhusupJYSpg1kOk_u2oTmoidiyzBamsjDAi0oUz2NxWtX3iYhPuh8lon5SpnL1SMhZ7HzJRQOn6bKtXohXdpbqCLLrmKkCCC9sPx7Tq7ox_fl1yaodOey2tmSUf9yjo-qKFxrSEx6YbIXyANyC_7VTOdf0E7h7642venIgE2LmYPmNw0Hb87zSdciz3EM7EfEmoHCqmO0BQZ_2-qnrXaWTezTWYH5JxofLU9rwXaywCD7wqZp0caqZeB"/>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 flex justify-center lg:justify-end items-center">
+<div class="glass-badge rounded-[32px] p-8 md:p-10 flex items-center gap-6 max-w-sm">
+<div class="text-white text-center">
+<div class="text-xl font-bold uppercase opacity-90">Save</div>
+<div class="text-7xl font-bold leading-none text-secondary">10%</div>
+<div class="text-2xl font-bold uppercase">off</div>
+</div>
+<div class="w-px h-24 bg-white/30 hidden md:block"></div>
+<div class="text-white text-xl md:text-2xl font-bold leading-tight opacity-90">
+                            on our Science <br/> Nutrition <br/> Selection
+                        </div>
+</div>
+</div>
+</div>
+<!-- Slide 2: Smart Pet Care -->
+<div class="carousel-slide hidden grid grid-cols-12 items-center gap-4 py-12 w-full">
+<div class="col-span-12 lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left">
+<div class="bg-white p-6 rounded-sm mb-6 shadow-xl border-b-4 border-secondary">
+<div class="text-primary font-headline-lg text-4xl font-bold tracking-tight">Paw Bliss</div>
+<div class="text-[10px] uppercase tracking-[0.2em] font-bold text-secondary mt-1">Smart Innovations</div>
+</div>
+<h1 class="text-white font-headline-lg text-5xl md:text-6xl mb-6 leading-tight">
+                        Next-Gen <br/> Smart Care
+                    </h1>
+<button class="bg-secondary text-white hover:bg-secondary/90 transition-colors px-10 py-3 rounded-full font-bold text-xl uppercase tracking-wider">
+                        Explore Tech
+                    </button>
+</div>
+<div class="col-span-12 lg:col-span-4 flex justify-center items-end relative h-[400px] pt-12 lg:pt-0">
+<div class="relative flex items-end gap-2">
+<img alt="Grooming Vacuum" class="w-32 md:w-44 transform -rotate-6 translate-x-4 z-10 drop-shadow-2xl rounded-2xl object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdQbGSp3fWYlRNEluIbtPj6SJmT1r5wJbq_aFLgWH2wL_Rz1lGNNgBlLM0EszpfW95QWrvLmKws8_E8nSmty2lo0Bpt2GU-2CjMxYZ9AW4Z-bnf2WIEJ3O_j8_BNRmUGaFxQ2xIfR6sIiNISG-SKS0JOpvM93U4n8BjDQ1SK1glMGzm0gp-yKK1-TL3wFjwor7iRRhbhTuuFMx7ZGnqe90hP8xbhlUBot2fe8M7ywz2TGXBXyd3TroRg22fxID-pMa5tgcF5Xe2EAA"/>
+<img alt="Smart Feeder" class="w-40 md:w-52 z-20 drop-shadow-2xl rounded-2xl object-cover aspect-[3/4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE8ysbQAIN_MEmXYN7zdjmLfREPZYKyRFv9qiIiSrUutRJ66mJiqNNZkbsPl2OSfn9z_LQf7OjGZl9RCpeNNU9wFcTSBQl182V13SbQ1d_B158VdtdeAF1Sv9etFTQb2GqY_k0L-QO0Vwbiiq8_TzZwx0jc8oMLKd2-vj_AxrhqDFFs9yG8ftrF2dwQfFKZPASovNoT6PsgVlADdivP5QrXCa05Mij2ViYd62DcrUxKjZsV7ReBiepl4E7SaNx990ntdwSYylVNMs3"/>
+<img alt="Tracker" class="w-32 md:w-44 transform rotate-6 -translate-x-4 z-10 drop-shadow-2xl rounded-2xl object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCx8u3MQQUG-2kjHX-wqHDVLyIzJTiuw8DAekPvKbbCSGqN1u4LjZ_grpCRcrHZbKCIWgFxpeTJ3rv3HqeqnBGd3h5nR9ndfsLzrUUMmhQ_RtzSd5Euao0sAkd5JApakpF6-mYPn8Z00e2Vzejzxm2MF5og7U41tf22eS6-qwV5FRoYvgTK9nsf7wZ8PZYlfvmI22cQapYAHmd14e0NYq3U_uvO9kXr9JT2S4U7it0SXFdp_KBHkIm_oxesQg8NDZLKUGP14EVIYoL4"/>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 flex justify-center lg:justify-end items-center">
+<div class="glass-badge rounded-[32px] p-8 md:p-10 flex items-center gap-6 max-w-sm">
+<div class="text-white text-center">
+<div class="text-xl font-bold uppercase opacity-90">Intro</div>
+<div class="text-7xl font-bold leading-none text-secondary">PRO</div>
+<div class="text-2xl font-bold uppercase">Price</div>
+</div>
+<div class="w-px h-24 bg-white/30 hidden md:block"></div>
+<div class="text-white text-xl md:text-2xl font-bold leading-tight opacity-90">
+                            Upgrade your <br/> Pet Lifestyle <br/> Today
+                        </div>
+</div>
+</div>
+</div>
+<!-- Slide 3: Luxury Comfort -->
+<div class="carousel-slide hidden grid grid-cols-12 items-center gap-4 py-12 w-full">
+<div class="col-span-12 lg:col-span-4 flex flex-col items-center lg:items-start text-center lg:text-left">
+<div class="bg-white p-6 rounded-sm mb-6 shadow-xl border-b-4 border-secondary">
+<div class="text-primary font-headline-lg text-4xl font-bold tracking-tight">Paw Bliss</div>
+<div class="text-[10px] uppercase tracking-[0.2em] font-bold text-secondary mt-1">Luxury Comfort</div>
+</div>
+<h1 class="text-white font-headline-lg text-5xl md:text-6xl mb-6 leading-tight">
+                        The Art of <br/> Pet Relaxation
+                    </h1>
+<button class="bg-secondary text-white hover:bg-secondary/90 transition-colors px-10 py-3 rounded-full font-bold text-xl uppercase tracking-wider">
+                        Shop Beds
+                    </button>
+</div>
+<div class="col-span-12 lg:col-span-4 flex justify-center items-end relative h-[400px] pt-12 lg:pt-0">
+<div class="relative flex items-end gap-2">
+<img alt="Velvet Accessory" class="w-32 md:w-44 transform -rotate-6 translate-x-4 z-10 drop-shadow-2xl rounded-2xl object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTaloom2od6I4Og0-7-b8g9Z9IGEdm_GEBwb36YSxkw5HwFSBexKuILfIQMIP3mHfuC-10tYDfdTut9_f8P12r_PAfU8i5exjEvWNQeiCWA3rgLa9bdXvO0S82KqzyWlcIjjlC3YuT9vElJYbebPRxyzmLUkSEKxwaqaIha451eQPlEy5jDgTUoPdvv7DO77bE7wF8aQZ1ZlrTvrk-kTz_hpaH3gianaoFomDNj6cjvT7_8cazSJrw1zntfE1g7dVyFKrIc6dSd9Te"/>
+<img alt="Orthopaedic Bed" class="w-40 md:w-52 z-20 drop-shadow-2xl rounded-2xl object-cover aspect-[3/4]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7vT4kx2NJ8lQ3ikyciW5z9hT_IRJDtWxXapy4Y0qrZIBOX_WrYy7C6DaE6opBlr7t8PomMlMXwe_ktvj7MHxxt9XMBPma_i4SPVEduq9P8sO2isE-T-XnQMLWm_7BPDthAN3AQW5ZP8kGDt2ixwrp8UWSTY5eRLzqv7Pl3idQpAxErYtYSZC2IfbSkOub3a9KF8-6NO_5Jpqw6TT4QPZ2wXjHJWqvv6QU3LeeBtbAz0v-p0_InYdaOkkmbfZAjYCZoDTlUs_lpG6i"/>
+<img alt="Silk Blanket" class="w-32 md:w-44 transform rotate-6 -translate-x-4 z-10 drop-shadow-2xl rounded-2xl object-cover aspect-square" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACd0BuKreAeloxo47cpiTMcko-4D_HJjmqumguzME1iiYS0rl7iwm_ttK2NoTmAeogPfH4fgUqhhaRIEH90QewqB-MlIhfwEcG5C1q0xs5SE3o8Fr1b0ioDkRzPQ9lqIg-vgMWaieMh6UJbXTGIyOhl1h1Ti5BCCp5X2VyZ7_LonF90iAm2mgTE_IYnzK0XJGty1MYZusrnisU6pzcBdsTEYM-87uKv19i8sbr8F8A1Kw6oMyMgJxWycCJukUySnZTheY07P2LjJ2B"/>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-4 flex justify-center lg:justify-end items-center">
+<div class="glass-badge rounded-[32px] p-8 md:p-10 flex items-center gap-6 max-w-sm">
+<div class="text-white text-center">
+<div class="text-xl font-bold uppercase opacity-90">Quiet</div>
+<div class="text-7xl font-bold leading-none text-secondary">Luxe</div>
+<div class="text-2xl font-bold uppercase">Series</div>
+</div>
+<div class="w-px h-24 bg-white/30 hidden md:block"></div>
+<div class="text-white text-xl md:text-2xl font-bold leading-tight opacity-90">
+                            Experience <br/> Modern Pet <br/> Indulgence
+                        </div>
+</div>
+</div>
+</div></div>
+<!-- Indicators -->
+<div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-3 z-40">
+<div class="carousel-dot w-3 h-3 rounded-full bg-white/30 cursor-pointer transition-colors active-dot" onclick="goToSlide(0)"></div>
+<div class="carousel-dot w-3 h-3 rounded-full bg-white/30 cursor-pointer transition-colors" onclick="goToSlide(1)"></div>
+<div class="carousel-dot w-3 h-3 rounded-full bg-white/30 cursor-pointer transition-colors" onclick="goToSlide(2)"></div>
+</div>
+</div>
+</section>
+<section class="py-[32px] bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-primary text-center mb-[32px]">May Must-Haves</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-gutter-desktop">
+<!-- Card 1 -->
+<div class="group cursor-pointer text-center">
+<div class="aspect-square bg-surface-variant rounded-2xl p-4 mb-3 flex items-center justify-center transition-transform hover:scale-105 editorial-shadow">
+<img alt="Organic Kibble" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCN_z_s9XSS2uQGhy3bPaLMqcQvJNir4JDqWs3MgvyJCJAllcOaETKNAiAk0JxIamAVLA8ADVSlAIZcSeMs2NNMhLpx2-wuG-xHm43Ewieww-OrkmStNFcCLgN8887VUAzp8RZ-ve2SQjLdhUoLxTQ4LeZcZ_wDe7UiwXq8SJG0nScc86EJceqkYGGmQODf6v9Y81t0prRfEkRZJT49c8NWEvmxDlz_GwOYqzj8VoPxrNmXrin2tXqe-TQuv6fJxag2Yp2Y1MGJeh3g"/>
+</div>
+<p class="font-label-md text-primary">Organic Kibble</p>
+</div>
+<!-- Card 2 -->
+<div class="group cursor-pointer text-center">
+<div class="aspect-square bg-surface-variant rounded-2xl p-4 mb-3 flex items-center justify-center transition-transform hover:scale-105 editorial-shadow">
+<img alt="Interactive Toys" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5yXbC5QM3T6xpyiF6q6KJOyZIOnw1oCRCaqZIsbhMw-8_ViUcooCG4IbRAKRHjfC69DcRzUU-qsF2mGFLnAoWaQBlyzMOkaBHEn-qz1MAgdN1obQz2Y_M4y1lPGRFyv7VPrGEgAeB-T8c2Pzeb0vtgnB3wpC1XEDpgsoux_GNXrlQp4uOUFvgDxDyfrvWG35Shi-bbbbCxps8cCJaq5vnHKkuBFxF5MmCgfGWGyvvlX9eKQwdByJi3b5GDR_k5cQvjeit3KCywEn7"/>
+</div>
+<p class="font-label-md text-primary">Interactive Toys</p>
+</div>
+<!-- Card 3 -->
+<div class="group cursor-pointer text-center">
+<div class="aspect-square bg-surface-variant rounded-2xl p-4 mb-3 flex items-center justify-center transition-transform hover:scale-105 editorial-shadow">
+<img alt="Leather Collars" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxuAtUsnmMVs9S4hdaFFbjYsm0VYDcr9iXzvFjqA8UlGS_Azyg63fw26avSnmBZzcgco2h7BriBM89rPSiaUTgM_Ls2HVOVZzzbmF2o59nMGAu-zgAwIMaskcvoJ1ea3ko67G0NcCbRXdMMjAUYtzJheHJtBh2Lka8Ndtv6E6_WaWTlxnG-kycEFmMyBsy6ZKc38nsuWahm4j3WtenhokE4FNXzYBylVmaVP1ZtPzr7Jl5YOWcPFhzpll3WsBR-NdUPx-vym0nTzOn"/>
+</div>
+<p class="font-label-md text-primary">Leather Collars</p>
+</div>
+<!-- Card 4 -->
+<div class="group cursor-pointer text-center">
+<div class="aspect-square bg-surface-variant rounded-2xl p-4 mb-3 flex items-center justify-center transition-transform hover:scale-105 editorial-shadow">
+<img alt="Grooming Kits" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABJXmeHFZQFcPErTkB7QvtNf3QAMr1_PfaFIhf_B46gksTPvfa808Rq8gUjWxbC9TI8nZuPGY5VPcvCtH-FF7Yh1gyXhWMzInn3SUQII7czKZ1P0FWtmni22d5eN4R8ECRBh1BAIV95gHfLJM9uI6Yww0kPm8kw3eJr0h6hFbBjhHexwei3J7bEOLgcaq_5VwjL2RekEtR1p-PS-1ncvyQhgeJdZQG4W6J2pfTU2sv2ETNdUOxj08i7rWQVZepZaqumqTE582fTioa"/>
+</div>
+<p class="font-label-md text-primary">Grooming Kits</p>
+</div>
+<!-- Card 5 -->
+<div class="group cursor-pointer text-center">
+<div class="aspect-square bg-surface-variant rounded-2xl p-4 mb-3 flex items-center justify-center transition-transform hover:scale-105 editorial-shadow">
+<img alt="Luxury Beds" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf6mKa02-JgpHq3eR5-_tfxrXXnj6hovCE8m0Y9qDx0vloX8ebuTm41vI44v1mAmIPa4ORNp1AXK8RQUV-c_QR_IAplgC1-swwuGM6EsbCZAFyinijVySJhheRQjx4LWs5aHlbDlI4MEFol10M4phdl6vl5KwScecPTPlmLy9-4vmFu1uOXY6ju8RgxrcqOB9IMRkutXcHlPKRdYAbhHjYV_NvwIw5-RoDYc-gNnPUFhqtAWVhK0NWXUpf2H3jhNiinP3gpI815JAo"/>
+</div>
+<p class="font-label-md text-primary">Luxury Beds</p>
+</div>
+<!-- Card 6 -->
+<div class="group cursor-pointer text-center">
+<div class="aspect-square bg-surface-variant rounded-2xl p-4 mb-3 flex items-center justify-center transition-transform hover:scale-105 editorial-shadow">
+<img alt="Smart Feeders" class="w-full h-full object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyIKgwS7PaQb3AD0Rjnl4fMEwUALw8DPejG5_GpdlmEVLHQnXzi2btSyrfKTR5nNDXDStbOz9RvQkX3vJFFIX7L1PF0hRanjLxybbhBAgVSGabglSUZ-as4-u-T0Kh_Xup7q_Hq1tVkhTAv61QEOJEQh7UDA_Id0FIdhlxIIFPRDcFXJVwWFna0gJXHhEheT8Ud-Im96K0eL-DnJTlcC--Ke3SiMdend87AuPUsraKZ2A0Rujp-iSKN2tQK1bQKWbnWeeuIwRGt-Sh"/>
+</div>
+<p class="font-label-md text-primary">Smart Feeders</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Top Picks Section -->
+<section class="pb-[120px] bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<!-- Rewards Banner -->
+<div class="w-full bg-surface-dim rounded-2xl py-4 px-8 mb-12 flex flex-col md:flex-row items-center justify-center gap-6 relative overflow-hidden">
+<div class="flex items-center gap-4 text-primary">
+<span class="material-symbols-outlined text-4xl opacity-40">stars</span>
+<p class="text-2xl font-headline-md">Get <span class="text-error font-bold">3% Cashback</span> on all orders!</p>
+</div>
+<button class="bg-error text-white px-10 py-3 rounded-full font-bold text-lg hover:bg-error/90 transition-colors z-10">Enrol now</button>
+<div class="absolute right-10 top-1/2 -translate-y-1/2 opacity-20 pointer-events-none">
+<span class="material-symbols-outlined text-[100px]">auto_awesome</span>
+</div>
+</div>
+<!-- Section Header -->
+<div class="flex justify-between items-center mb-10">
+<h2 class="font-headline-lg text-4xl text-primary">Top Picks</h2>
+<button class="border border-error text-error px-8 py-2 rounded-lg font-bold hover:bg-error hover:text-white transition-all">View all</button>
+</div>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Product 1: Acana -->
+<div class="bg-white rounded-2xl overflow-hidden product-card-shadow flex flex-col group border border-surface-container transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-primary/10">
+<div class="relative p-6 bg-surface-container-low aspect-square flex items-center justify-center">
+<span class="absolute top-4 left-4 bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded">DEAL</span>
+<img alt="Organic Grain-Free Salmon Kibble" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDC4k0gVOclwoc1GfltCISUWrfcogU7hMxDtLfz50qkuAsanmnvGvdLdlAAxbpC4xIe5ocRB9BAZZPSdIuujjFGp0q98nhJFYryXG7K71MJribLcF5xsppho2-l_P8ehhOEFWvpEye_QpSj5_QbyGlpkCytlSmswL5Wler54znfOf4CrnjnMjkNVD34jwbuS-BupuWb1rSW7gU3W1PWYvF1oPVrFO7waeJUO_S0cff-qYn-SeHBZX81bJTsC2hXYG2AgkC1d1sl-8AJ"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xl font-bold text-primary">AED 119.00</span>
+<button class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+<div class="inline-block bg-error-container text-on-error-container text-[10px] font-bold px-2 py-1 rounded mb-4 w-fit">15% Off</div>
+<p class="text-[12px] text-on-surface-variant mb-4 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sync</span> AED 107.10 (Repeat &amp; Save)
+                    </p>
+<h3 class="font-bold text-primary text-sm line-clamp-2 mb-6">Organic Grain-Free Salmon Kibble - Premium Adult Cat</h3>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-sm">local_shipping</span> Delivery in 1-2 Days
+                    </div>
+</div>
+</div>
+<!-- Product 2: Orijen Dog -->
+<div class="bg-white rounded-2xl overflow-hidden product-card-shadow flex flex-col group border border-surface-container transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-primary/10">
+<div class="relative p-6 bg-surface-container-low aspect-square flex items-center justify-center">
+<span class="absolute top-4 left-4 bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded">DEAL</span>
+<img alt="Durable Interactive Fetch Set" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuARexZR10EpzgiAvLsBpEtGtLcAdU8ynm6hQzthVZjlrb8FDWhW8u4RKtkTEcWFju6k7Kb_oKiXw-o2US3ITY70sYkwhFbpMG8IZF4YhrYJUYaBmFb44uHB409RKph9yNgLRDjo6DY2xhOD3ZfQTPOJrjy5polDftAC8PWkJWtNRQFD5xDC0QjbNXOoR_R-PJ2zFB3qx2FKP0mG9qECBlp4ogVu1fskax8t0BS6GHHHgR0tEWbbmOHfYl6cKJ_tZSSeA1MVrAri8aXR"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xl font-bold text-primary">AED 29.90</span>
+<button class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+<div class="inline-block bg-error-container text-on-error-container text-[10px] font-bold px-2 py-1 rounded mb-4 w-fit">10% Off</div>
+<p class="text-[12px] text-on-surface-variant mb-4 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sync</span> AED 26.91 (Repeat &amp; Save)
+                    </p>
+<h3 class="font-bold text-primary text-sm line-clamp-2 mb-6">Durable Interactive Fetch Set - Eco-Friendly Rubber</h3>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-sm">local_shipping</span> Delivery in 1-2 Days
+                    </div>
+</div>
+</div>
+<!-- Product 3: Orijen Cat -->
+<div class="bg-white rounded-2xl overflow-hidden product-card-shadow flex flex-col group border border-surface-container transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-primary/10">
+<div class="relative p-6 bg-surface-container-low aspect-square flex items-center justify-center">
+<span class="absolute top-4 left-4 bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded">DEAL</span>
+<img alt="Luxury Orthopedic Pet Bed" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEoKxGqE61gFVQkV8JyWpMj2SICd1lwGJemPx_HphJaoBXrCzw-HqHsquMVgVUlkU1jdNQ04EPGcmHHZiI73Y7SpcAyL4FOo-ikmw6zA7PXjhQp5kaW82SY8EPSeihl6NcKUa_Kc1Qx2Qz556nevwLv6Jx90aLveBNj-xgqTE4PqlLZDkoH6PMZbYfki2QE_QczyTxptWjy8HjT7lR3xCUpGxqa_G5PWiURmVI63C9Roox01qpe0OqgXRRWHKE_DmBVPwUaYILYiGg"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xl font-bold text-primary">AED 239.00</span>
+<button class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+<div class="inline-block bg-error-container text-on-error-container text-[10px] font-bold px-2 py-1 rounded mb-4 w-fit">12% Off</div>
+<p class="text-[12px] text-on-surface-variant mb-4 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sync</span> AED 210.32 (Repeat &amp; Save)
+                    </p>
+<h3 class="font-bold text-primary text-sm line-clamp-2 mb-6">Luxury Orthopedic Pet Bed - Memory Foam Comfort</h3>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-sm">local_shipping</span> Delivery in 1-2 Days
+                    </div>
+</div>
+</div>
+<!-- Product 4: Lily's Kitchen -->
+<div class="bg-white rounded-2xl overflow-hidden product-card-shadow flex flex-col group border border-surface-container transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-primary/10">
+<div class="relative p-6 bg-surface-container-low aspect-square flex items-center justify-center">
+<span class="absolute top-4 left-4 bg-error text-white text-[10px] font-bold px-2 py-1 rounded">SALE</span>
+<img alt="Premium Spa Grooming Kit" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDchk4khyWrtiZ6XgY8lz37_3LX9c8Hnlbn_MYWbdsCASo7f60KvSWbvIf7K0yUb-0bRGv2VgFQxf8-nc7lWai-vQOyX3_qb_vEdYD3XBD062wgtd90wb46zWMDQ_fmnm8objN0jL-VnXVXTmygnFc6oMBjUStjTKzjVilgiaH7YuV-GuNW0yH-_wmOeHa6GywcL6maaK4rylQEvpjwBcLDneiFWpA60hj_7VsyoWwbv46rUd5pzVS2Fnw4IPNKh95i6I9jOlHfN6P9"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xl font-bold text-primary">AED 109.00</span>
+<button class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+<div class="inline-block bg-error-container text-on-error-container text-[10px] font-bold px-2 py-1 rounded mb-4 w-fit">Save AED 15</div>
+<p class="text-[12px] text-on-surface-variant mb-4 flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">sync</span> AED 98.10 (Repeat &amp; Save)
+                    </p>
+<h3 class="font-bold text-primary text-sm line-clamp-2 mb-6">Premium Spa Grooming Kit - Essential Care Tools</h3>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-sm">local_shipping</span> Delivery in 1-2 Days
+                    </div>
+</div>
+</div>
+</div>
+</div>
+</section><section class="py-[32px] bg-surface">
+<div class="max-w-container-max mx-auto px-margin-desktop">
+<!-- Section Header -->
+<div class="flex justify-between items-center mb-10">
+<h2 class="font-headline-lg text-4xl text-primary">Beat the Heat</h2>
+<button class="border border-error text-error px-8 py-2 rounded-lg font-bold hover:bg-error hover:text-white transition-all">View all</button>
+</div>
+<!-- Grid Row -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-gutter-desktop">
+<!-- Product 1: Trixie Dog Cooling Mat -->
+<div class="bg-white rounded-2xl overflow-hidden product-card-shadow flex flex-col group border border-surface-container transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-primary/10">
+<div class="relative p-6 bg-surface-container-low aspect-square flex items-center justify-center">
+<span class="absolute top-4 left-4 bg-secondary text-white text-[10px] font-bold px-2 py-1 rounded">DEAL</span>
+<img alt="Smart Hydration Fountain" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBJ811o_z8Krtby9j8Ivo2tGyQwRR5FVcF7HUTWJUykF9-WdqwMgonKxpvQwVLSvEGofRJK0srlPq-_VcTR9jdE1i2QSp9B_boWdMOV29QzbvRD8mL7K26_nurh-_l1lU7D_0Xf0HHM7VKZhe5cLoy7b-Y499vBnnq5T3cmSUdjZkkDr_ohgjwvg6IYx2j8HVZ5PCX10uDCBnydtLl6esVuW9-RLQqspzQrvHYAFv0SPw7gzEb6a29uiorwqUqoby6su3bH7x3rz7pK"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xl font-bold text-primary">AED 145.00</span>
+<button class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+<div class="inline-block bg-error-container text-on-error-container text-[10px] font-bold px-2 py-1 rounded mb-4 w-fit">20% Off</div>
+<h3 class="font-bold text-primary text-sm line-clamp-2 mb-6">Smart Hydration Fountain - Continuous Filtered Water</h3>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-sm">local_shipping</span> Delivery in 1-2 Days
+</div>
+</div></div>
+<!-- Product 2 -->
+<div class="bg-white rounded-2xl overflow-hidden product-card-shadow flex flex-col group border border-surface-container transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-primary/10">
+<div class="relative p-6 bg-surface-container-low aspect-square flex items-center justify-center">
+<img alt="Cooling Gel Mat" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCIZ8AyTdiZTe2wGamRd9GecYJfHVTfMvtgXDropVxr6lOrjkHE7SUqKxK5JfPw96jR46CHR8POmPChjdzq8IyZPfBKCQX4czC4aYWWdU7geeKDsOCyldNuaV4qyUhn-07ut_c1XyXK3kbcSa1hqySohnoKe8g0wTtMcVQCk2IsmeZSBqZeAQsrLX5vH3XyuOBGajat1_XI5gL2U5Z3BC7KwM6imEtnuygTpmeXpRWEvh2f59lO3gix7Qiu8q3vwiS3OddKw7MYmW36"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xl font-bold text-primary">AED 85.00</span>
+<button class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+<h3 class="font-bold text-primary text-sm line-clamp-2 mb-6">Premium Cooling Gel Mat - Large</h3>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-sm">local_shipping</span> Delivery in 1-2 Days
+</div>
+</div></div>
+<!-- Product 3 -->
+<div class="bg-white rounded-2xl overflow-hidden product-card-shadow flex flex-col group border border-surface-container transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-primary/10">
+<div class="relative p-6 bg-surface-container-low aspect-square flex items-center justify-center">
+<img alt="Portable Pet Water Bottle" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANIXwOdRBUhuhiTB12sev1c24ZF3Ey_qpc6h7jTje_aeAutWP5B0_MUvR6ojW158qf1VDphZcrtSdRGtsETgWVp8dAVBFwUYzCmYdsaUJlZ6mdYyzxcSyTXX1B28yK77QCvtuPYx_xr7IDDlyKK1_j5RaGM3nlOIT2pe-nCeOww5ydx3BEhcAuiQ_yt9wOwPhaK4ADSfPiNoKlPAVrKzr86Ct4ybtRuxWXNDr-Yi7Pt6nGmJuofCAUWkz21WZLmId4Q9an0UPE-n5j"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xl font-bold text-primary">AED 45.00</span>
+<button class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+<h3 class="font-bold text-primary text-sm line-clamp-2 mb-6">Portable Travel Water Bottle with Bowl</h3>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-sm">local_shipping</span> Delivery in 1-2 Days
+</div>
+</div></div>
+<!-- Product 4 -->
+<div class="bg-white rounded-2xl overflow-hidden product-card-shadow flex flex-col group border border-surface-container transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl hover:ring-1 hover:ring-primary/10">
+<div class="relative p-6 bg-surface-container-low aspect-square flex items-center justify-center">
+<img alt="Cooling Bandana" class="w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSyjGRGbwTrwknS76UIIDxdA5r0AvWkNKR6soRvEENY19IaA-aLENTXBp714xc1BGf2pUlxiwvqSU2bM0eY1GTM43z6zAzY0MM9ZE4XfmYqhrkv6MFHUaQlrudc8FmVZHcuu3BcHNKeEPyEhxU0G_3pnv2klUs9VcRUEFoLK8amnxX3Jzfsvlv8r103Mglxd8_Iej0KHUcSPrvw50BfaKX-f1tW3jLJFk9Aa0dEpcL_tWOHaoLmD_qfKGQGYGJpD8jNSiN9rHLx9nB"/>
+</div>
+<div class="p-6 flex-1 flex flex-col">
+<div class="flex justify-between items-start mb-2">
+<span class="text-xl font-bold text-primary">AED 25.00</span>
+<button class="w-10 h-10 rounded-full bg-secondary text-white flex items-center justify-center hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-sm">shopping_cart</span>
+</button>
+</div>
+<h3 class="font-bold text-primary text-sm line-clamp-2 mb-6">Ice Silk Cooling Bandana</h3>
+<div class="mt-auto pt-4 border-t border-surface-container flex items-center gap-2 text-primary font-bold text-[10px] uppercase tracking-wider opacity-60">
+<span class="material-symbols-outlined text-sm">local_shipping</span> Delivery in 1-2 Days
+</div>
+</div></div>
+</div></div></section></main><footer class="bg-primary text-white pt-16 pb-8 px-margin-desktop">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+<!-- Brand & Mission -->
+<div class="space-y-6">
+<div class="text-headline-md font-bold">Paw Bliss</div>
+<p class="text-white/70 text-sm leading-relaxed">
+                    Dedicated to providing the finest luxury care and nutrition for your beloved companions. We believe every pet deserves a touch of bliss in their daily lives.
+                </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors" href="#">
+<img alt="Instagram" class="w-5 h-5 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7UNAuasIra_DgSjBPnpmfld82eUQH3qtZIzwfCu7G7JUFT5sh48HkhxwnwuvrcxCYMVN2rrsTo0qAJw56eVlXmhqbhykxNbtklFFphD1skgc_mAmwuaDXfKkZCpgjmXjmC1SJkfBw3Th7TQYoIguRtEWwF6GNt52xvE3xczXrgpOoJncxab8-RCRkM-HVXWSAp1LXg-9Ntuo6WyLTLuykghyNOgEz3IK06ckKTAaJYPRanwBb9PjdNFE0y7JzryhlJnhGD1QT327A"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors" href="#">
+<img alt="Facebook" class="w-5 h-5" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZYZIQ9xpGC6U5_WVKwJgHtZZ17bLHovH3v5KtXgoFPDxU04p6fo9-LsLu6sYxqmEgLpWEiGi52SIcvjEoySJZl-kl2iJHWIvuw_wZ_ilji7R5XAKtWbsw48fMspnhZKTn-GD8nSekr9d_tfgydWbTDLXjDN9uxJvujnl1-sgpLxq7y9E0-n_CxXzuTbM0huM9ZWLZ_AqWoH6d-AjonxA3uRNllBUAseOzNCcEf5TYQH0vDCu8xt3nHbmL-DgNM4mkX3n862FdSkE9"/>
+</a>
+<a class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary transition-colors" href="#">
+<img alt="Twitter" class="w-5 h-5 invert" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA81FR5blFFwOo9hH93tbGAnDutrH5XgTEuWBqcBEzHfHe8zXVUevhR7y-Kf2u6-4aOTSIc6iNomcBbQ390jeUwl8G5L97xaTAb-DMTwxhU-wRVSQqAFTkMYT2TNwTlEaV1FzWCXn5DzlqPPHoz4Kp3qHe1FzV3dvW3KYyOLuERhf8XuVu_TebM9fZotISQcSTxDMsQ3XLXzOIzvwFqC5qS9h4I45oUF7-9HGxPyxX8Yg0okCy92KXKjWcLsrcljufDuX4LfBryXRou"/>
+</a>
+</div>
+</div>
+<!-- Navigation Columns -->
+<div class="grid grid-cols-2 lg:grid-cols-3 col-span-1 lg:col-span-2 gap-8">
+<div>
+<h4 class="font-bold mb-6 text-secondary uppercase tracking-wider text-xs">Shop</h4>
+<ul class="space-y-4 text-sm text-white/70">
+<li><a class="hover:text-white transition-colors" href="#">Dog</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Cat</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Fish</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Bird</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-6 text-secondary uppercase tracking-wider text-xs">Company</h4>
+<ul class="space-y-4 text-sm text-white/70">
+<li><a class="hover:text-white transition-colors" href="#">About Us</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Our Story</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Blog</a></li>
+</ul>
+</div>
+<div class="col-span-2 md:col-span-1">
+<h4 class="font-bold mb-6 text-secondary uppercase tracking-wider text-xs">Support</h4>
+<ul class="space-y-4 text-sm text-white/70">
+<li><a class="hover:text-white transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Shipping &amp; Returns</a></li>
+<li><a class="hover:text-white transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+</div>
+<!-- Newsletter -->
+<div class="space-y-6">
+<h4 class="font-bold text-secondary uppercase tracking-wider text-xs">Stay Updated</h4>
+<p class="text-sm text-white/70">Subscribe to receive updates, access to exclusive deals, and more.</p>
+<form class="flex flex-col gap-3">
+<input class="bg-white/10 border-none rounded-lg px-4 py-3 text-sm focus:ring-1 focus:ring-secondary text-white placeholder:text-white/40" placeholder="Your email address" type="email"/>
+<button class="bg-secondary hover:bg-secondary/90 text-white font-bold py-3 rounded-lg transition-colors uppercase tracking-widest text-xs" type="submit">
+                        Subscribe
+                    </button>
+</form>
+</div>
+</div>
+<!-- Bottom Bar -->
+<div class="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-white/50">
+                © 2024 Paw Bliss. All rights reserved.
+            </p>
+<div class="flex gap-6 text-xs text-white/50">
+<a class="hover:text-white transition-colors" href="#">Privacy Policy</a>
+<a class="hover:text-white transition-colors" href="#">Terms of Service</a>
+</div>
+</div>
+</div>
+</footer></body></html>

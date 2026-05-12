@@ -212,63 +212,140 @@
 .product-card-shadow {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04)
     }</style>
-<!-- Header -->
-<header class="relative z-50 w-full bg-white/90 backdrop-blur-md shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-300">
-<!-- Utility Bar -->
-<div class="bg-on-surface text-white/90 py-2 px-margin-desktop text-[11px] uppercase tracking-widest font-bold">
-<div class="max-w-container-max mx-auto flex justify-center flex-wrap gap-4 text-center">
-<span>The Biggest Online Pet Store with 12,000+ Products</span>
-<span class="hidden md:inline text-white/30">•</span>
-<span>3% cashback on all orders</span>
-<span class="hidden md:inline text-white/30">•</span>
-<span>Free Delivery Above AED 100</span>
-<span class="hidden lg:inline text-white/30">•</span>
-<span>60 Minute Delivery Available</span>
-</div>
-</div>
-<!-- Main Header -->
-<div class="py-5 px-margin-desktop border-b border-surface-variant/50">
-<div class="max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-gutter-desktop">
-<!-- Logo -->
-<div class="shrink-0 hover:opacity-80 transition-opacity cursor-pointer">
-    <img src="pb_updated_logo.png" alt="Pet Basket Logo" class="h-10 w-auto">
-</div>
-<!-- Search Bar -->
-<div class="flex-1 w-full relative max-w-2xl mx-auto md:mx-8 mt-4 md:mt-0">
-<input class="w-full h-11 bg-surface border border-outline-variant/30 rounded-full pl-6 pr-12 text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary focus:bg-white transition-all text-sm font-medium placeholder:text-outline-variant" placeholder="What do you think your pet needs?" type="text"/>
-<button class="absolute right-2 top-1/2 -translate-y-1/2 w-8 h-8 flex items-center justify-center text-outline hover:text-secondary transition-colors rounded-full hover:bg-surface-variant">
-<span class="material-symbols-outlined text-[20px]">search</span>
-</button>
-</div>
-<!-- Location & User Actions -->
-<div class="flex items-center gap-6 shrink-0 mt-4 md:mt-0">
-<button class="hidden lg:flex items-center gap-2 text-on-surface hover:text-secondary transition-colors group">
-<span class="material-symbols-outlined text-[20px] text-primary group-hover:text-secondary transition-colors">location_on</span>
-<div class="text-left leading-tight">
-<span class="block text-[10px] text-outline uppercase tracking-wider font-bold">Deliver To</span>
-<span class="text-sm font-bold flex items-center gap-1">Select Location <span class="material-symbols-outlined text-[16px]">expand_more</span></span>
-</div>
-</button>
-<div class="h-8 w-px bg-surface-variant hidden lg:block"></div>
-<div class="flex items-center gap-5">
-<button class="flex items-center gap-2 group text-on-surface hover:text-secondary transition-colors">
-<span class="material-symbols-outlined text-[24px]">person</span>
-<div class="hidden xl:block text-left text-xs leading-tight">
-<span class="block text-[10px] text-outline uppercase tracking-wider font-bold">Sign In</span>
-<span class="font-bold">My Account</span>
-</div>
-</button>
-<button class="material-symbols-outlined text-[24px] text-on-surface hover:text-secondary hover:scale-110 transition-all">favorite</button>
-<button class="relative material-symbols-outlined text-[24px] text-on-surface hover:text-secondary hover:scale-110 transition-all">
+<header class="relative z-50 w-full bg-white shadow-[0_4px_20px_rgba(0,0,0,0.04)] transition-all duration-300">
+    <!-- Utility Bar -->
+    <div class="bg-[#009B4E] text-white py-2 px-margin-desktop text-[10px] md:text-[11px] uppercase tracking-widest font-bold">
+        <div class="max-w-container-max mx-auto overflow-hidden">
+            <div class="flex whitespace-nowrap animate-marquee md:animate-none md:justify-center gap-8 md:gap-4">
+                <span>The Biggest Online Pet Store with 12,000+ Products</span>
+                <span class="md:inline text-white/30">•</span>
+                <span>3% cashback on all orders</span>
+                <span class="md:inline text-white/30">•</span>
+                <span>Free Delivery Above AED 100</span>
+                <span class="md:inline text-white/30">•</span>
+                <span>60 Minute Delivery Available</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Header -->
+    <div class="py-4 md:py-5 px-4 md:px-margin-desktop border-b border-surface-variant/50">
+        <div class="max-w-container-max mx-auto">
+            <!-- Mobile Top Row: Menu, Logo, Actions -->
+            <div class="flex items-center justify-between gap-4 md:hidden mb-4">
+                <button class="material-symbols-outlined text-primary text-2xl" id="mobile-menu-btn">menu</button>
+                <div class="hover:opacity-80 transition-opacity cursor-pointer">
+                    <img src="pb_updated_logo.png" alt="Pet Basket Logo" class="h-8 w-auto">
+                </div>
+                <div class="flex items-center gap-3">
+                    <button class="material-symbols-outlined text-on-surface text-2xl">favorite</button>
+                    <button class="relative material-symbols-outlined text-on-surface text-2xl">
                         shopping_cart
-                        <span class="absolute -top-1.5 -right-2 bg-secondary text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold ring-2 ring-white">0</span>
-</button>
+                        <span class="absolute -top-1 -right-1.5 bg-secondary text-white text-[8px] w-3.5 h-3.5 rounded-full flex items-center justify-center font-bold ring-1 ring-white">0</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="flex flex-col md:flex-row items-center gap-4 md:gap-gutter-desktop">
+                <!-- Desktop Logo -->
+                <div class="hidden md:block shrink-0 hover:opacity-80 transition-opacity cursor-pointer">
+                    <img src="pb_updated_logo.png" alt="Pet Basket Logo" class="h-10 w-auto">
+                </div>
+
+                <!-- Search Bar -->
+                <div class="flex-1 w-full relative max-w-2xl mx-auto">
+                    <input class="w-full h-10 md:h-11 bg-surface border border-outline-variant/30 rounded-full pl-5 pr-12 text-on-surface focus:border-secondary focus:ring-1 focus:ring-secondary focus:bg-white transition-all text-xs md:text-sm font-medium placeholder:text-outline-variant" placeholder="Search for your pet's favorites..." type="text"/>
+                    <button class="absolute right-2 top-1/2 -translate-y-1/2 w-7 h-7 md:w-8 md:h-8 flex items-center justify-center text-outline hover:text-secondary transition-colors rounded-full hover:bg-surface-variant">
+                        <span class="material-symbols-outlined text-[18px] md:text-[20px]">search</span>
+                    </button>
+                </div>
+
+                <!-- Desktop Location & Actions -->
+                <div class="hidden md:flex items-center gap-6 shrink-0">
+                    <button class="hidden lg:flex items-center gap-2 text-on-surface hover:text-secondary transition-colors group">
+                        <span class="material-symbols-outlined text-[20px] text-primary group-hover:text-secondary transition-colors">location_on</span>
+                        <div class="text-left leading-tight">
+                            <span class="block text-[10px] text-outline uppercase tracking-wider font-bold">Deliver To</span>
+                            <span class="text-sm font-bold flex items-center gap-1">Select Location <span class="material-symbols-outlined text-[16px]">expand_more</span></span>
+                        </div>
+                    </button>
+                    <div class="h-8 w-px bg-surface-variant hidden lg:block"></div>
+                    <div class="flex items-center gap-5">
+                        <button class="flex items-center gap-2 group text-on-surface hover:text-secondary transition-colors">
+                            <span class="material-symbols-outlined text-[24px]">person</span>
+                            <div class="hidden xl:block text-left text-xs leading-tight">
+                                <span class="block text-[10px] text-outline uppercase tracking-wider font-bold">Sign In</span>
+                                <span class="font-bold">My Account</span>
+                            </div>
+                        </button>
+                        <button class="material-symbols-outlined text-[24px] text-on-surface hover:text-secondary hover:scale-110 transition-all">favorite</button>
+                        <button class="relative material-symbols-outlined text-[24px] text-on-surface hover:text-secondary hover:scale-110 transition-all">
+                            shopping_cart
+                            <span class="absolute -top-1.5 -right-2 bg-secondary text-white text-[9px] w-4 h-4 rounded-full flex items-center justify-center font-bold ring-2 ring-white">0</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Mobile Navigation Drawer -->
+<div id="mobile-drawer" class="fixed inset-0 z-[100] pointer-events-none">
+    <div id="drawer-overlay" class="absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300"></div>
+    <div id="drawer-content" class="absolute top-0 left-0 w-[280px] h-full bg-white -translate-x-full transition-transform duration-300 shadow-2xl flex flex-col">
+        <div class="p-6 border-b border-surface-variant flex items-center justify-between">
+            <img src="pb_updated_logo.png" class="h-8 w-auto" alt="Logo">
+            <button id="close-drawer" class="material-symbols-outlined text-2xl text-primary">close</button>
+        </div>
+        <nav class="flex-1 overflow-y-auto py-4">
+            <a href="#" class="flex items-center px-6 py-3 text-sm font-bold text-primary hover:bg-surface-container transition-colors uppercase tracking-wider">Dog</a>
+            <a href="#" class="flex items-center px-6 py-3 text-sm font-bold text-primary hover:bg-surface-container transition-colors uppercase tracking-wider">Cat</a>
+            <a href="#" class="flex items-center px-6 py-3 text-sm font-bold text-primary hover:bg-surface-container transition-colors uppercase tracking-wider">Fish</a>
+            <a href="#" class="flex items-center px-6 py-3 text-sm font-bold text-primary hover:bg-surface-container transition-colors uppercase tracking-wider">Bird</a>
+            <a href="#" class="flex items-center px-6 py-3 text-sm font-bold text-primary hover:bg-surface-container transition-colors uppercase tracking-wider">Small Pet</a>
+            <div class="my-2 border-t border-surface-variant"></div>
+            <a href="#" class="flex items-center px-6 py-3 text-sm font-bold text-primary hover:bg-surface-container transition-colors uppercase tracking-wider gap-2">
+                <span class="material-symbols-outlined text-orange-500">local_fire_department</span> Offer Zone
+            </a>
+            <a href="#" class="flex items-center px-6 py-3 text-sm font-bold text-primary hover:bg-surface-container transition-colors uppercase tracking-wider gap-2">
+                <span class="material-symbols-outlined text-blue-500">new_releases</span> New Arrivals
+            </a>
+            <a href="#" class="flex items-center px-6 py-3 text-sm font-bold text-primary hover:bg-surface-container transition-colors uppercase tracking-wider">Services</a>
+        </nav>
+        <div class="p-6 bg-surface border-t border-surface-variant">
+            <button class="w-full bg-primary text-white py-3 rounded-xl font-bold flex items-center justify-center gap-2">
+                <span class="material-symbols-outlined text-lg">person</span> Sign In
+            </button>
+        </div>
+    </div>
 </div>
-</div>
-</div>
-</div>
+
+<script>
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const closeBtn = document.getElementById('close-drawer');
+    const drawer = document.getElementById('mobile-drawer');
+    const overlay = document.getElementById('drawer-overlay');
+    const content = document.getElementById('drawer-content');
+
+    function toggleDrawer(open) {
+        if(open) {
+            drawer.classList.remove('pointer-events-none');
+            overlay.classList.add('opacity-100');
+            content.classList.remove('-translate-x-full');
+        } else {
+            drawer.classList.add('pointer-events-none');
+            overlay.classList.remove('opacity-100');
+            content.classList.add('-translate-x-full');
+        }
+    }
+
+    menuBtn.onclick = () => toggleDrawer(true);
+    closeBtn.onclick = () => toggleDrawer(false);
+    overlay.onclick = () => toggleDrawer(false);
+</script>
 <!-- Sub Navigation -->
-<nav class="px-margin-desktop py-4 bg-[#1A73B9]">
+<nav class="hidden md:block px-margin-desktop py-4 bg-[#1A73B9]">
 <div class="max-w-container-max mx-auto flex flex-wrap justify-center md:justify-center gap-x-8 gap-y-4 overflow-x-auto no-scrollbar">
 <a class="relative group font-bold text-[12px] text-white/90 hover:text-white transition-colors whitespace-nowrap uppercase tracking-wider" href="#">
     DOG
@@ -376,14 +453,14 @@
     <div class="overflow-hidden w-full relative">
         <div class="flex gap-6 w-max animate-marquee hover:[animation-play-state:paused] px-margin-desktop">
             <!-- Deal Card 1 -->
-            <div class="min-w-[350px] md:min-w-[450px] bg-[#fef08a] rounded-[40px] p-8 flex flex-col justify-between relative overflow-hidden group">
+            <div class="min-w-[280px] md:min-w-[450px] bg-[#fef08a] rounded-[30px] md:rounded-[40px] p-6 md:p-8 flex flex-col justify-between relative overflow-hidden group">
                 <div class="relative z-10">
-                    <div class="bg-[#22c55e] text-white text-[10px] font-bold px-3 py-1 rounded-full w-fit mb-4 uppercase tracking-widest">Discount</div>
-                    <div class="flex items-start gap-2">
-                        <span class="text-7xl font-bold text-[#1e293b]">35</span>
+                    <div class="bg-[#22c55e] text-white text-[9px] md:text-[10px] font-bold px-2 md:px-3 py-1 rounded-full w-fit mb-4 uppercase tracking-widest">Discount</div>
+                    <div class="flex items-start gap-1 md:gap-2">
+                        <span class="text-5xl md:text-7xl font-bold text-[#1e293b]">35</span>
                         <div class="pt-2">
-                            <span class="block text-2xl font-bold text-[#1e293b]">%</span>
-                            <span class="block text-xs font-bold text-[#1e293b] uppercase">Off</span>
+                            <span class="block text-xl md:text-2xl font-bold text-[#1e293b]">%</span>
+                            <span class="block text-[10px] md:text-xs font-bold text-[#1e293b] uppercase">Off</span>
                         </div>
                     </div>
                 </div>
@@ -391,39 +468,39 @@
             </div>
 
             <!-- Deal Card 2 -->
-            <div class="min-w-[350px] md:min-w-[450px] bg-[#dcfce7] rounded-[40px] p-8 flex flex-col justify-between relative overflow-hidden group">
+            <div class="min-w-[280px] md:min-w-[450px] bg-[#dcfce7] rounded-[30px] md:rounded-[40px] p-6 md:p-8 flex flex-col justify-between relative overflow-hidden group">
                 <div class="relative z-10">
-                    <h3 class="text-3xl font-bold text-[#064e3b] mb-2 leading-tight">Sleep Better,<br/>Every Day</h3>
-                    <p class="text-[#065f46] opacity-70 mb-6 font-medium">Soft beds & comfort</p>
-                    <button class="bg-[#f97316] text-white px-8 py-3 rounded-full font-bold text-sm shadow-lg shadow-orange-200">Shop Now</button>
+                    <h3 class="text-2xl md:text-3xl font-bold text-[#064e3b] mb-2 leading-tight">Sleep Better,<br/>Every Day</h3>
+                    <p class="text-[#065f46] opacity-70 mb-4 md:mb-6 font-medium text-xs md:text-base">Soft beds & comfort</p>
+                    <button class="bg-[#f97316] text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-bold text-xs md:text-sm shadow-lg shadow-orange-200">Shop Now</button>
                 </div>
-                <div class="absolute top-8 right-8 w-20 h-20 bg-[#fde047] rounded-full flex flex-col items-center justify-center border-4 border-white shadow-xl z-20">
-                    <span class="text-2xl font-bold text-[#1e293b]">50%</span>
-                    <span class="text-[8px] font-bold uppercase">Off</span>
+                <div class="absolute top-4 md:top-8 right-4 md:right-8 w-14 h-14 md:w-20 md:h-20 bg-[#fde047] rounded-full flex flex-col items-center justify-center border-2 md:border-4 border-white shadow-xl z-20">
+                    <span class="text-lg md:text-2xl font-bold text-[#1e293b]">50%</span>
+                    <span class="text-[6px] md:text-[8px] font-bold uppercase">Off</span>
                 </div>
                 <img src="deals_2.png" class="absolute bottom-0 right-0 w-2/3 h-2/3 object-contain translate-x-10 group-hover:translate-x-0 transition-transform duration-500" alt="Bed Deals">
             </div>
 
             <!-- Deal Card 3 -->
-            <div class="min-w-[350px] md:min-w-[450px] bg-[#ffedd5] rounded-[40px] p-8 flex flex-col justify-between relative overflow-hidden group">
+            <div class="min-w-[280px] md:min-w-[450px] bg-[#ffedd5] rounded-[30px] md:rounded-[40px] p-6 md:p-8 flex flex-col justify-between relative overflow-hidden group">
                 <div class="relative z-10">
-                    <h3 class="text-3xl font-bold text-[#7c2d12] mb-2 leading-tight">Sleep Better,<br/>Every Day</h3>
-                    <p class="text-[#9a3412] opacity-70 mb-6 font-medium">Soft beds & comfort</p>
-                    <button class="bg-[#fbbf24] text-[#1e293b] px-8 py-3 rounded-full font-bold text-sm shadow-lg shadow-yellow-200">Shop Now</button>
+                    <h3 class="text-2xl md:text-3xl font-bold text-[#7c2d12] mb-2 leading-tight">Sleep Better,<br/>Every Day</h3>
+                    <p class="text-[#9a3412] opacity-70 mb-4 md:mb-6 font-medium text-xs md:text-base">Soft beds & comfort</p>
+                    <button class="bg-[#fbbf24] text-[#1e293b] px-6 md:px-8 py-2 md:py-3 rounded-full font-bold text-xs md:text-sm shadow-lg shadow-yellow-200">Shop Now</button>
                 </div>
                 <img src="deals_2.png" class="absolute bottom-0 right-0 w-2/3 h-2/3 object-contain translate-x-10 group-hover:translate-x-0 transition-transform duration-500" alt="Bed Deals">
             </div>
 
             <!-- DUPLICATES FOR MARQUEE -->
             <!-- Deal Card 1 -->
-            <div class="min-w-[350px] md:min-w-[450px] bg-[#fef08a] rounded-[40px] p-8 flex flex-col justify-between relative overflow-hidden group">
+            <div class="min-w-[280px] md:min-w-[450px] bg-[#fef08a] rounded-[30px] md:rounded-[40px] p-6 md:p-8 flex flex-col justify-between relative overflow-hidden group">
                 <div class="relative z-10">
-                    <div class="bg-[#22c55e] text-white text-[10px] font-bold px-3 py-1 rounded-full w-fit mb-4 uppercase tracking-widest">Discount</div>
-                    <div class="flex items-start gap-2">
-                        <span class="text-7xl font-bold text-[#1e293b]">35</span>
+                    <div class="bg-[#22c55e] text-white text-[9px] md:text-[10px] font-bold px-2 md:px-3 py-1 rounded-full w-fit mb-4 uppercase tracking-widest">Discount</div>
+                    <div class="flex items-start gap-1 md:gap-2">
+                        <span class="text-5xl md:text-7xl font-bold text-[#1e293b]">35</span>
                         <div class="pt-2">
-                            <span class="block text-2xl font-bold text-[#1e293b]">%</span>
-                            <span class="block text-xs font-bold text-[#1e293b] uppercase">Off</span>
+                            <span class="block text-xl md:text-2xl font-bold text-[#1e293b]">%</span>
+                            <span class="block text-[10px] md:text-xs font-bold text-[#1e293b] uppercase">Off</span>
                         </div>
                     </div>
                 </div>
@@ -431,25 +508,25 @@
             </div>
 
             <!-- Deal Card 2 -->
-            <div class="min-w-[350px] md:min-w-[450px] bg-[#dcfce7] rounded-[40px] p-8 flex flex-col justify-between relative overflow-hidden group">
+            <div class="min-w-[280px] md:min-w-[450px] bg-[#dcfce7] rounded-[30px] md:rounded-[40px] p-6 md:p-8 flex flex-col justify-between relative overflow-hidden group">
                 <div class="relative z-10">
-                    <h3 class="text-3xl font-bold text-[#064e3b] mb-2 leading-tight">Sleep Better,<br/>Every Day</h3>
-                    <p class="text-[#065f46] opacity-70 mb-6 font-medium">Soft beds & comfort</p>
-                    <button class="bg-[#f97316] text-white px-8 py-3 rounded-full font-bold text-sm shadow-lg shadow-orange-200">Shop Now</button>
+                    <h3 class="text-2xl md:text-3xl font-bold text-[#064e3b] mb-2 leading-tight">Sleep Better,<br/>Every Day</h3>
+                    <p class="text-[#065f46] opacity-70 mb-4 md:mb-6 font-medium text-xs md:text-base">Soft beds & comfort</p>
+                    <button class="bg-[#f97316] text-white px-6 md:px-8 py-2 md:py-3 rounded-full font-bold text-xs md:text-sm shadow-lg shadow-orange-200">Shop Now</button>
                 </div>
-                <div class="absolute top-8 right-8 w-20 h-20 bg-[#fde047] rounded-full flex flex-col items-center justify-center border-4 border-white shadow-xl z-20">
-                    <span class="text-2xl font-bold text-[#1e293b]">50%</span>
-                    <span class="text-[8px] font-bold uppercase">Off</span>
+                <div class="absolute top-4 md:top-8 right-4 md:right-8 w-14 h-14 md:w-20 md:h-20 bg-[#fde047] rounded-full flex flex-col items-center justify-center border-2 md:border-4 border-white shadow-xl z-20">
+                    <span class="text-lg md:text-2xl font-bold text-[#1e293b]">50%</span>
+                    <span class="text-[6px] md:text-[8px] font-bold uppercase">Off</span>
                 </div>
                 <img src="deals_2.png" class="absolute bottom-0 right-0 w-2/3 h-2/3 object-contain translate-x-10 group-hover:translate-x-0 transition-transform duration-500" alt="Bed Deals">
             </div>
 
             <!-- Deal Card 3 -->
-            <div class="min-w-[350px] md:min-w-[450px] bg-[#ffedd5] rounded-[40px] p-8 flex flex-col justify-between relative overflow-hidden group">
+            <div class="min-w-[280px] md:min-w-[450px] bg-[#ffedd5] rounded-[30px] md:rounded-[40px] p-6 md:p-8 flex flex-col justify-between relative overflow-hidden group">
                 <div class="relative z-10">
-                    <h3 class="text-3xl font-bold text-[#7c2d12] mb-2 leading-tight">Sleep Better,<br/>Every Day</h3>
-                    <p class="text-[#9a3412] opacity-70 mb-6 font-medium">Soft beds & comfort</p>
-                    <button class="bg-[#fbbf24] text-[#1e293b] px-8 py-3 rounded-full font-bold text-sm shadow-lg shadow-yellow-200">Shop Now</button>
+                    <h3 class="text-2xl md:text-3xl font-bold text-[#7c2d12] mb-2 leading-tight">Sleep Better,<br/>Every Day</h3>
+                    <p class="text-[#9a3412] opacity-70 mb-4 md:mb-6 font-medium text-xs md:text-base">Soft beds & comfort</p>
+                    <button class="bg-[#fbbf24] text-[#1e293b] px-6 md:px-8 py-2 md:py-3 rounded-full font-bold text-xs md:text-sm shadow-lg shadow-yellow-200">Shop Now</button>
                 </div>
                 <img src="deals_2.png" class="absolute bottom-0 right-0 w-2/3 h-2/3 object-contain translate-x-10 group-hover:translate-x-0 transition-transform duration-500" alt="Bed Deals">
             </div>
@@ -722,48 +799,44 @@
         </div>
 
         <!-- Stats Bar -->
-        <div class="bg-surface border border-surface-variant rounded-[3rem] shadow-sm max-w-5xl mx-auto py-8 px-10 flex flex-col md:flex-row items-center justify-between gap-8 relative overflow-visible">
+        <div class="bg-surface border border-surface-variant rounded-[2rem] md:rounded-[3rem] shadow-sm max-w-5xl mx-auto py-6 md:py-8 px-6 md:px-10 flex flex-col md:flex-row items-center justify-between gap-6 md:gap-8 relative overflow-visible mt-8 md:mt-0">
             
-            <div class="flex items-center gap-5 z-10 flex-1 justify-center md:justify-start">
-                <div class="w-14 h-14 rounded-full bg-[#166534] text-white flex items-center justify-center shadow-md shrink-0">
-                    <span class="material-symbols-outlined text-[28px]">pets</span>
+            <div class="flex items-center gap-4 md:gap-5 z-10 flex-1 justify-center md:justify-start w-full">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#166534] text-white flex items-center justify-center shadow-md shrink-0">
+                    <span class="material-symbols-outlined text-[24px] md:text-[28px]">pets</span>
                 </div>
-                <div>
-                    <h4 class="font-bold text-2xl text-[#064e3b] leading-tight">50,000+</h4>
-                    <p class="text-[13px] text-on-surface-variant font-medium mt-1">Happy Pet Parents</p>
-                </div>
-            </div>
-
-            <div class="w-px h-16 bg-gray-200 hidden md:block opacity-70"></div>
-
-            <div class="flex items-center gap-5 z-10 flex-1 justify-center">
-                <div class="w-14 h-14 rounded-full bg-[#166534] text-white flex items-center justify-center shadow-md shrink-0">
-                    <span class="material-symbols-outlined text-[28px]">local_mall</span>
-                </div>
-                <div>
-                    <h4 class="font-bold text-2xl text-[#064e3b] leading-tight">100,000+</h4>
-                    <p class="text-[13px] text-on-surface-variant font-medium mt-1">Orders Delivered</p>
+                <div class="text-center md:text-left">
+                    <h4 class="font-bold text-xl md:text-2xl text-[#064e3b] leading-tight">50,000+</h4>
+                    <p class="text-[11px] md:text-[13px] text-on-surface-variant font-medium mt-0.5 md:mt-1">Happy Pet Parents</p>
                 </div>
             </div>
 
-            <div class="w-px h-16 bg-gray-200 hidden md:block opacity-70"></div>
+            <div class="w-full h-px md:w-px md:h-16 bg-gray-200 opacity-70"></div>
 
-            <div class="flex items-center gap-5 z-10 flex-1 justify-center md:justify-end">
-                <div class="w-14 h-14 rounded-full bg-[#166534] text-white flex items-center justify-center shadow-md shrink-0">
-                    <span class="material-symbols-outlined text-[28px]">verified</span>
+            <div class="flex items-center gap-4 md:gap-5 z-10 flex-1 justify-center w-full">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#166534] text-white flex items-center justify-center shadow-md shrink-0">
+                    <span class="material-symbols-outlined text-[24px] md:text-[28px]">local_mall</span>
                 </div>
-                <div>
-                    <div class="flex items-center gap-2 leading-tight">
-                        <h4 class="font-bold text-2xl text-[#064e3b]">4.8/5</h4>
-                        <div class="flex text-[#fbbf24] text-sm">
-                            <span class="material-symbols-outlined fill-current text-[16px]">star</span>
-                            <span class="material-symbols-outlined fill-current text-[16px]">star</span>
-                            <span class="material-symbols-outlined fill-current text-[16px]">star</span>
-                            <span class="material-symbols-outlined fill-current text-[16px]">star</span>
-                            <span class="material-symbols-outlined fill-current text-[16px]">star_half</span>
+                <div class="text-center md:text-left">
+                    <h4 class="font-bold text-xl md:text-2xl text-[#064e3b] leading-tight">100,000+</h4>
+                    <p class="text-[11px] md:text-[13px] text-on-surface-variant font-medium mt-0.5 md:mt-1">Orders Delivered</p>
+                </div>
+            </div>
+
+            <div class="w-full h-px md:w-px md:h-16 bg-gray-200 opacity-70"></div>
+
+            <div class="flex items-center gap-4 md:gap-5 z-10 flex-1 justify-center md:justify-end w-full">
+                <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-[#166534] text-white flex items-center justify-center shadow-md shrink-0">
+                    <span class="material-symbols-outlined text-[24px] md:text-[28px]">verified</span>
+                </div>
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start gap-2 leading-tight">
+                        <h4 class="font-bold text-xl md:text-2xl text-[#064e3b]">4.8/5</h4>
+                        <div class="flex text-[#fbbf24] text-xs">
+                            <span class="material-symbols-outlined fill-current text-[14px] md:text-[16px]">star</span>
                         </div>
                     </div>
-                    <p class="text-[13px] text-on-surface-variant font-medium mt-1">Average Rating</p>
+                    <p class="text-[11px] md:text-[13px] text-on-surface-variant font-medium mt-0.5 md:mt-1">Average Rating</p>
                 </div>
             </div>
 
@@ -1292,8 +1365,8 @@
     left: 0;
     right: 0;
     bottom: 80px;
-    height: 240px; 
-    z-index: 1; /* Above footer bg, below content */
+    height: 420px; /* Increased height significantly */
+    z-index: 1;
     pointer-events: none;
     overflow: hidden;
   }
@@ -1304,9 +1377,9 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Spans the full width */
+    object-fit: cover; /* Back to cover for full width fit */
     object-position: bottom center;
-    opacity: 1; /* Full brand colors */
+    opacity: 1;
   }
 
   /* Bottom Bar */
@@ -1401,18 +1474,34 @@
 
     .pb-col-brand {
       grid-column: span 3;
+      text-align: center;
+    }
+    
+    .pb-logo-wrap {
+      justify-content: center;
+    }
+    
+    .pb-socials {
+      justify-content: center;
     }
 
     .pb-desc {
       max-width: 500px;
+      margin: 0 auto 24px;
     }
 
     .pb-col-newsletter {
       grid-column: span 3;
+      text-align: center;
+    }
+    
+    .pb-col-newsletter h3 {
+      justify-content: center;
     }
 
     .pb-newsletter-form {
       max-width: 400px;
+      margin: 0 auto;
     }
 
     .pb-bottom-bar {
@@ -1423,7 +1512,7 @@
       flex-direction: column;
       padding: 24px 32px;
       padding-bottom: 90px;
-      gap: 16px;
+      gap: 24px;
     }
 
     .pb-features {
@@ -1433,8 +1522,13 @@
   }
 
   @media (max-width: 768px) {
+    .pb-inner {
+      padding: 40px 24px 160px;
+    }
+    
     .pb-grid {
       grid-template-columns: 1fr 1fr;
+      gap: 32px;
     }
 
     .pb-col-brand, .pb-col-newsletter {
@@ -1446,11 +1540,29 @@
       transform: scale(0.8);
       transform-origin: bottom left;
     }
+    
+    .pb-col-links h3 {
+      font-size: 18px;
+    }
   }
 
   @media (max-width: 480px) {
+    .pb-inner {
+      padding: 40px 20px 140px;
+    }
+    
     .pb-grid {
       grid-template-columns: 1fr;
+      gap: 24px;
+      text-align: center;
+    }
+    
+    .pb-col-links h3 {
+      justify-content: center;
+    }
+    
+    .pb-line {
+      margin: 0 auto 20px;
     }
 
     .pb-col-brand, .pb-col-newsletter {
@@ -1459,11 +1571,20 @@
 
     .pb-features {
       flex-direction: column;
-      gap: 12px;
+      gap: 16px;
     }
 
     .pb-sep {
       display: none;
+    }
+    
+    .pb-hills-layer {
+      height: 320px; /* Taller on mobile too */
+      bottom: 240px;
+    }
+    
+    .pb-payments {
+      justify-content: center;
     }
   }
 </style>
